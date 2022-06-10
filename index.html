@@ -7,15 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,800&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <style>
       body {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
         font-family: 'lato', sans-serif;
+      }
+      button {
+        font-family: 'Lato', sans-serif;
       }
       .bg-gray-900 {
         background-color: #121826;
@@ -61,17 +65,55 @@
         padding-left: 16px;
         padding-right: 16px;
       }
+      .py-12 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      .px-28 {
+        padding-left: 28px;
+        padding-right: 28px;
+      }
       .font-lato {
         font-family: 'lato', sans-serif;
       }
       .no-underline {
         text-decoration: none;
       }
+      .bg-brand-teal {
+        background-color: #539d98;
+      }
+      .border-none {
+        border: none;
+      }
+      .rounded-full {
+        border-radius: 9999px;
+      }
+      .font-bold {
+        font-weight: bold;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .text-sm {
+        font-size: 14px;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .relative {
+        position: relative;
+      }
+      .z-10 {
+        z-index: 10;
+      }
     </style>
     <title>Document</title>
   </head>
   <body>
-    <header class="bg-gray-900 flex justify-between" style="padding: 18px 12px">
+    <header
+      class="bg-gray-900 flex justify-between relative z-10"
+      style="padding: 18px 12px"
+    >
       <div class="flex justify-center items-center">
         <img src="./img/code_icon.svg" alt="" style="margin-right: 50px" />
         <a href="" class="text-white py-8 px-16 no-underline">Pricing</a>
@@ -87,8 +129,15 @@
           style="margin-right: 12px"
           >Login</a
         >
-        <button>Sign Up</button>
+        <button
+          class="bg-brand-teal text-white border-none rounded-full font-bold uppercase text-sm py-12 px-28"
+        >
+          Sign Up
+        </button>
       </div>
     </header>
+    <section class="relative" style="top: -77px">
+      <img src="./img/hero.jpg" alt="" class="w-full" />
+    </section>
   </body>
 </html>
