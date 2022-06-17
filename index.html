@@ -106,12 +106,15 @@
       .z-10 {
         z-index: 10;
       }
+      .object-cover {
+        object-fit: cover;
+      }
     </style>
     <title>Document</title>
   </head>
   <body>
     <header
-      class="bg-gray-900 flex justify-between relative z-10"
+      class="flex justify-between relative z-10"
       style="padding: 18px 12px"
     >
       <div class="flex justify-center items-center">
@@ -136,13 +139,13 @@
         </button>
       </div>
     </header>
-    <section class="relative" style="top: -77px">
+    <section class="relative" style="top: -124px">
       <video
         loop="loop"
         autoplay="autoplay"
         playsinline
         muted="muted"
-        class="w-full h-full"
+        class="w-full h-full object-cover"
         style="min-height: 550px"
         src="./video/galaxy.mp4"
       ></video>
