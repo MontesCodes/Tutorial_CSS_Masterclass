@@ -21,6 +21,12 @@
       button {
         font-family: 'Lato', sans-serif;
       }
+      h1 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
       .bg-gray-900 {
         background-color: #121826;
       }
@@ -109,6 +115,15 @@
       .object-cover {
         object-fit: cover;
       }
+      .text-brand-teal {
+        color: #90cac7;
+      }
+      .text-brand-teal-dark {
+        color: #539d98;
+      }
+      .bg-white {
+        background-color: #fff;
+      }
     </style>
     <title>Document</title>
   </head>
@@ -150,6 +165,21 @@
         src="./video/galaxy.mp4"
       ></video>
       <!-- <img src="./img/hero.jpg" alt="" class="w-full" /> -->
+      <div class="bg-gray-900" style="max-width: 438px">
+        <h1 style="font-size: 60px" class="text-white">
+          Lorem ipsum <span class="text-brand-teal">dolor sit.</span>
+        </h1>
+        <p class="text-white" style="max-width: 449px; margin-top: 30px">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+          aut sint delectus.
+        </p>
+        <button
+          class="bg-white text-brand-teal-dark border-none py-12 px-28"
+          style="margin-top: 30px; border-radius: 4px"
+        >
+          Lorem, ipsum.
+        </button>
+      </div>
     </section>
   </body>
 </html>
