@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/2.2.19tailWind.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -94,9 +95,9 @@
       .rounded-full {
         border-radius: 9999px;
       }
-      .font-bold {
+      /* .font-bold {
         font-weight: bold;
-      }
+      } */
       .uppercase {
         text-transform: uppercase;
       }
@@ -124,13 +125,35 @@
       .bg-white {
         background-color: #fff;
       }
+      .absolute {
+        position: absolute;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .text-16px {
+        font-size: 16px;
+      }
+      .text-36px {
+        font-size: 36px;
+      }
+
+      @media (min-width: 600px) {
+        .sm\:text-60px {
+          font-size: 60px;
+        }
+        .sm\:text-20px {
+          font-size: 20px;
+        }
+      }
     </style>
     <title>Document</title>
   </head>
   <body>
     <header
-      class="flex justify-between relative z-10"
-      style="padding: 18px 12px"
+      class="flex justify-between relative z-10 mx-auto"
+      style="padding: 18px 12px; max-width: 1200px"
     >
       <div class="flex justify-center items-center">
         <img src="./img/code_icon.svg" alt="" style="margin-right: 50px" />
@@ -154,31 +177,39 @@
         </button>
       </div>
     </header>
-    <section class="relative" style="top: -124px">
+    <section class="">
       <video
         loop="loop"
         autoplay="autoplay"
         playsinline
         muted="muted"
-        class="w-full h-full object-cover"
-        style="min-height: 550px"
+        class="w-full h-full object-cover absolute"
+        style="height: 689px; top: -124px"
         src="./video/galaxy.mp4"
       ></video>
       <!-- <img src="./img/hero.jpg" alt="" class="w-full" /> -->
-      <div class="bg-gray-900" style="max-width: 438px">
-        <h1 style="font-size: 60px" class="text-white">
-          Lorem ipsum <span class="text-brand-teal">dolor sit.</span>
-        </h1>
-        <p class="text-white" style="max-width: 449px; margin-top: 30px">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-          aut sint delectus.
-        </p>
-        <button
-          class="bg-white text-brand-teal-dark border-none py-12 px-28"
-          style="margin-top: 30px; border-radius: 4px"
-        >
-          Lorem, ipsum.
-        </button>
+      <div
+        style="padding: 0 12px; padding-top: 100px; max-width: 1200px"
+        class="mx-auto"
+      >
+        <div class="relative z-10" style="max-width: 438px">
+          <h1 class="text-white text-36px sm:text-60px font-bold">
+            Lorem ipsum <span class="text-brand-teal">dolor sit.</span>
+          </h1>
+          <p
+            class="text-white text-16px sm:text-20px"
+            style="max-width: 449px; margin-top: 30px"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            aut sint delectus.
+          </p>
+          <button
+            class="bg-white text-brand-teal-dark border-none py-12 px-28"
+            style="margin-top: 30px; border-radius: 4px"
+          >
+            Lorem, ipsum.
+          </button>
+        </div>
       </div>
     </section>
   </body>
