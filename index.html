@@ -87,9 +87,9 @@
       .text-sm {
         font-size: 14px;
       }
-      .relative {
+      /* .relative {
         position: relative;
-      }
+      } */
       .z-10 {
         z-index: 10;
       }
@@ -105,9 +105,9 @@
       .bg-white {
         background-color: #fff;
       }
-      .absolute {
+      /* .absolute {
         position: absolute;
-      }
+      } */
       .mx-auto {
         margin-left: auto;
         margin-right: auto;
@@ -118,6 +118,9 @@
       .text-36px {
         font-size: 36px;
       }
+      .h-385px {
+        height: 385px;
+      }
       /* sm screen size */
       @media (min-width: 600px) {
         .sm\:text-60px {
@@ -127,65 +130,77 @@
           font-size: 20px;
         }
       }
-      .sm\:h-689px {
-        height: 689px;
+
+      /* md screen size */
+      @media (min-width: 768px) {
+        .md\:h-689px {
+          height: 689px;
+        }
       }
     </style>
     <title>Document</title>
   </head>
   <body>
-    <header
-      class="flex justify-between py-18 px-6 relative z-10 mx-auto"
-      style="max-width: 1200px"
-    >
-      <div class="flex justify-center items-center">
-        <img src="./img/code_icon.svg" alt="" style="margin-right: 50px" />
-        <nav class="hidden md:block">
-          <a href="" class="text-white py-8 px-16 no-underline">Pricing</a>
-          <a href="" class="text-white py-8 px-16 no-underline">Courses</a>
-          <a href="" class="text-white py-8 px-16 no-underline">Blog</a>
-          <a href="" class="text-white py-8 px-16 no-underline">Forums</a>
-          <a href="" class="text-white py-8 px-16 no-underline">Forums</a>
-        </nav>
-      </div>
-      <div class="md:flex hidden items-center">
-        <a
-          href=""
-          class="text-white block py-8 px-16"
-          style="margin-right: 12px"
-          >Login</a
-        >
-        <button
-          class="bg-brand-teal text-white border-none rounded-full font-bold uppercase text-sm py-12 px-28"
-        >
-          Sign Up
-        </button>
-      </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6 text-white md:hidden"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        stroke-width="2"
+    <div class="relative">
+      <div
+        class="absolute inset-0 z-10 bg-gradient-to-b from-black to-transparent hidden md:block"
+        style="bottom: -35px"
+      ></div>
+      <header
+        class="flex justify-between py-18 px-6 relative z-20 mx-auto"
+        style="max-width: 1200px"
       >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
-      </svg>
-    </header>
-    <section class="">
-      <video
-        loop="loop"
-        autoplay="autoplay"
-        playsinline
-        muted="muted"
-        class="w-full h-full object-cover absolute text-white"
-        style="top: -124px"
-        src="./video/galaxy.mp4"
-      ></video>
+        <div class="flex justify-center items-center">
+          <img src="./img/code_icon.svg" alt="" style="margin-right: 50px" />
+          <nav class="hidden md:block">
+            <a href="" class="text-white py-8 px-16 no-underline">Pricing</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Courses</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Blog</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Forums</a>
+            <a href="" class="text-white py-8 px-16 no-underline">Forums</a>
+          </nav>
+        </div>
+        <div class="md:flex hidden items-center">
+          <a
+            href=""
+            class="text-white block py-8 px-16"
+            style="margin-right: 12px"
+            >Login</a
+          >
+          <button
+            class="bg-brand-teal text-white border-none rounded-full font-bold uppercase text-sm py-12 px-28"
+          >
+            Sign Up
+          </button>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-white md:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </header>
+    </div>
+    <section class="relative">
+      <div class="absolute md:h-689px h-385px" style="top: -124px">
+        <div class="bg-black absolute z-10 inset-0 opacity-50 md:hidden"></div>
+        <video
+          loop="loop"
+          autoplay="autoplay"
+          playsinline
+          muted="muted"
+          class="w-full h-full object-cover"
+          src="./video/galaxy.mp4"
+        ></video>
+      </div>
       <!-- <img src="./img/hero.jpg" alt="" class="w-full" /> -->
       <div style="max-width: 1200px" class="mx-auto md:pt-32 px-6">
         <div class="relative z-10" style="max-width: 438px">
