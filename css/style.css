@@ -16,26 +16,20 @@ body {
   margin: 0;
   font-family: 'lato', sans-serif;
 }
+button {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 .bg-gray-900 {
   background-color: #121826;
 }
 .text-white {
   color: white;
-}
-.block {
-  display: block;
-}
-.inline-block {
-  display: inline-block;
-}
-.inline {
-  display: inline;
-}
-.hidden {
-  display: none;
-}
-.flex {
-  display: flex;
 }
 .justify-between {
   justify-content: space-between;
@@ -60,6 +54,14 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 }
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.px-28 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
 .font-lato {
   font-family: 'lato', sans-serif;
 }
@@ -68,4 +70,66 @@ body {
 }
 .bg-brand-teal {
   background-color: #539d98;
+}
+.border-none {
+  border: none;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-sm {
+  font-size: 14px;
+}
+/* .relative {
+        position: relative;
+      } */
+.z-10 {
+  z-index: 10;
+}
+.object-cover {
+  object-fit: cover;
+}
+.text-brand-teal {
+  color: #90cac7;
+}
+.text-brand-teal-dark {
+  color: #539d98;
+}
+.bg-white {
+  background-color: #fff;
+}
+/* .absolute {
+        position: absolute;
+      } */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-16px {
+  font-size: 16px;
+}
+.text-36px {
+  font-size: 36px;
+}
+.h-385px {
+  height: 385px;
+}
+/* sm screen size */
+@media (min-width: 600px) {
+  .sm\:text-60px {
+    font-size: 60px;
+  }
+  .sm\:text-20px {
+    font-size: 20px;
+  }
+}
+
+/* md screen size */
+@media (min-width: 768px) {
+  .md\:h-689px {
+    height: 689px;
+  }
 }
