@@ -134,7 +134,14 @@
       /* md screen size */
       @media (min-width: 768px) {
         .md\:h-689px {
-          height: 689px;
+          height: 888px;
+        }
+      }
+
+      /* md screen size */
+      @media (min-width: 986px) {
+        .md\:h-1440px {
+          height: 1440px;
         }
       }
     </style>
@@ -143,7 +150,7 @@
   <body>
     <div class="relative">
       <div
-        class="absolute inset-0 z-10 bg-gradient-to-b from-black to-transparent hidden md:block"
+        class="absolute inset-0 z-10 bg-gradient-to-b from-gray-900 to-transparent hidden md:block"
         style="bottom: -35px"
       ></div>
       <header
@@ -190,7 +197,7 @@
       </header>
     </div>
     <section class="relative">
-      <div class="absolute md:h-689px h-385px" style="top: -124px">
+      <div class="absolute md:h-689px h-385px md:h-1440px" style="top: -124px">
         <div class="bg-black absolute z-10 inset-0 opacity-50 md:hidden"></div>
         <video
           loop="loop"
