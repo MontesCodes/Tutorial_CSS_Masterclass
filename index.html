@@ -19,6 +19,7 @@
         -moz-osx-font-smoothing: grayscale;
         margin: 0;
         font-family: 'lato', sans-serif;
+        background-color: #121826;
       }
       button {
         font-family: 'Lato', sans-serif;
@@ -118,8 +119,8 @@
       .text-36px {
         font-size: 36px;
       }
-      .h-385px {
-        height: 385px;
+      .h-450px {
+        height: 450px;
       }
       /* sm screen size */
       @media (min-width: 600px) {
@@ -140,7 +141,7 @@
 
       /* md screen size */
       @media (min-width: 986px) {
-        .md\:h-1440px {
+        .lg\:h-1440px {
           height: 1440px;
         }
       }
@@ -196,8 +197,11 @@
         </svg>
       </header>
     </div>
-    <section class="relative">
-      <div class="absolute md:h-689px h-385px md:h-1440px" style="top: -124px">
+    <section
+      class="relative overflow-hidden md:h-689px h-450px lg:h-1440px"
+      style="top: -124px"
+    >
+      <div class="absolute md:h-689px h-450px lg:h-1440px">
         <div class="bg-black absolute z-10 inset-0 opacity-50 md:hidden"></div>
         <video
           loop="loop"
@@ -209,7 +213,8 @@
         ></video>
       </div>
       <!-- <img src="./img/hero.jpg" alt="" class="w-full" /> -->
-      <div style="max-width: 1200px" class="mx-auto md:pt-32 px-6">
+      <!-- pt-32 is custom for my site -->
+      <div style="max-width: 1200px" class="mx-auto pt-32 pb-8 md:pt-44 px-6">
         <div class="relative z-10" style="max-width: 438px">
           <h1 class="text-white text-36px sm:text-60px leading-none font-bold">
             Lorem ipsum <span class="text-brand-teal">dolor sit.</span>
@@ -231,20 +236,32 @@
       </div>
     </section>
     <!-- Stats section -->
-    <section class="bg-gray-900">
-      <div>
-        <div>
-          <h2>84</h2>
-          <p>Lessons</p>
+    <section class="bg-gray-900 px-6">
+      <div style="top: -100px" class="relative z-20">
+        <div
+          class="bg-gray-700 rounded-lg lg:flex lg:mx-auto lg:divide-x lg:divide-gray-600"
+          style="max-width: 878px"
+        >
+          <div
+            class="text-center py-12 border-b border-solid border-gray-600 lg:w-1/3 md:border-b-0"
+          >
+            <h2 class="text-purple-300 font-bold text-5xl">84</h2>
+            <p class="text-gray-300 text-lg">Lessons</p>
+          </div>
+          <div
+            class="text-center py-12 border-b border-solid border-gray-600 lg:w-1/3 md:border-b-0"
+          >
+            <h2 class="text-purple-300 font-bold text-5xl">42</h2>
+            <p class="text-gray-300 text-lg">Hours of Content</p>
+          </div>
+          <div class="text-center py-12 lg:w-1/3">
+            <h2 class="text-purple-300 font-bold text-5xl">10001</h2>
+            <p class="text-gray-300 text-lg">Students</p>
+          </div>
         </div>
-        <div>
-          <h2>84</h2>
-          <p>Lessons</p>
-        </div>
-        <div>
-          <h2>84</h2>
-          <p>Lessons</p>
-        </div>
+        <p class="text-gray-500 text-xs text-center mt-4">
+          Metrics update real-time
+        </p>
       </div>
     </section>
   </body>
